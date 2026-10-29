@@ -1,0 +1,11 @@
+# чужой клон, ставится setup.sh (AGPLv3)
+/OpenMontage/
+.gstack/
+.DS_Store
+__pycache__/
+*.pyc
+node_modules/
+.venv/
+*.mp4
+*.wav
+*.mov
