@@ -17,6 +17,8 @@
 | `Leonxlnx/taste-skill` (MIT) | `design-taste-frontend` | вкус и анти-шаблонность веб-страниц |
 | `emilkowalski/skills` (MIT) | `animate`, `choreograph`, `review-animations`, `improve-animations`, `remove-animations`, `find-animation-opportunities`, `animation-vocabulary`, `animation-performance`, `apple-design`, `emil-design-eng`, `break-ui`, `prototype`, `pick-ui-library`, `mobile-native`, `animate-expo`, `ask-sonner`, `write-swift` | решения по моушену: кривые, длительности, хореография, ревью анимаций |
 
+Свои скиллы (2026-11-05): `shorts-ideas` (идеи, хуки, сценарии, контент-план, фильтры по правилам простоты), `voiceover` (выбор голоса, подготовка текста, ударения, Piper, замер звука).
+
 Не установлен: `impeccable` (`npx impeccable install` качает с `impeccable.style`, домен закрыт сетевой политикой облачного окружения). Запасной путь: `npx skills add pbakaus/impeccable` (только скилл, без хуков).
 Известно: `doctor` показывает `ffprobe MISSING` (в `OpenMontage/.venv/bin` есть только `ffmpeg` 7.1), нужен `ffprobe`. Запуск: `PATH="OpenMontage/.venv/bin:$PATH"`.
 

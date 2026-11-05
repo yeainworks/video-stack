@@ -26,13 +26,13 @@ description: Mandatory entry point for ANY video work in this repo: making, edit
 ## 2. Маршрут: этап → что использовать
 | Этап | Использовать |
 |---|---|
-| Идея, сценарий | `docs/simplicity-rules.md`, шаблон сценария проекта, `OpenMontage/skills/creative/short-form.md`, `storytelling.md` |
+| Идея, хук, сценарий, контент-план | **`shorts-ideas`**, `docs/simplicity-rules.md`, шаблон сценария проекта, `OpenMontage/skills/creative/short-form.md`, `storytelling.md` |
 | Весь процесс по шагам | `docs/pipeline.md` |
 | Референс-видео («сделай как это») | `OpenMontage/AGENT_GUIDE.md` (Reference Video Entry Point), `skills/meta/video-reference-analyst.md` |
-| Озвучка (скрэтч) | Piper через OpenMontage; `OpenMontage/.claude/skills/text-to-speech`, `elevenlabs`, `fish-audio-tts` (если есть ключи) |
+| Озвучка | **`voiceover`** (выбор голоса, текст, ударения, замер); Piper через OpenMontage; `OpenMontage/.claude/skills/text-to-speech`, `elevenlabs`, `fish-audio-tts` (если есть ключи) |
 | Расшифровка, тайминги слов | `scripts/transcribe.py`, `scripts/build_timing.py`; `OpenMontage/.claude/skills/speech-to-text` |
 | Сжать паузы в голосе | `scripts/tighten_voice.py` |
-| Визуал, композиция | Remotion: `OpenMontage/.claude/skills/remotion`, `remotion-best-practices`, `OpenMontage/skills/core/remotion.md`; дизайн: `docs/visual-system.md` + `design/brand.tsx` проекта; альтернатива HTML-рендеру: `hyperframes*` |
+| Визуал, композиция | Remotion: `OpenMontage/.claude/skills/remotion`, `remotion-best-practices`, `OpenMontage/skills/core/remotion.md`; дизайн: `docs/visual-system.md` + `design/brand.tsx` проекта; альтернатива HTML-рендеру: `hyperframes*` (скиллы `hyperframes`, `hyperframes-registry`, `media-use`); официальные `remotion-*`; движение: `animate`, `choreograph`, `review-animations` |
 | Проверка кадров до рендера | `scripts/contact_sheet.py` |
 | Рендер немого видео | `scripts/render.sh` |
 | Музыка | `OpenMontage/.claude/skills/music`, `acestep`, `lyria`; `scripts/make_sfx.py music` |
