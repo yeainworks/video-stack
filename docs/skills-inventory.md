@@ -8,6 +8,16 @@
 | `ffmpeg-skill` v2.17.3 (kajisho5, MIT) | 42 локальных ffmpeg-инструмента: cut, join, fit 9:16, captions, silence, loudness, sync, export TikTok/Reels/Shorts, check, look. Только stdlib Python, без сети. Установлен копированием, без `npx`. |
 
 Проверено перед установкой: нет сетевых вызовов, `shell=True`, `eval`. Лицензия MIT.
+
+Добавлено 2026-11-05 через `npx skills add <repo> -a claude-code -s '*' -y --copy` (точные версии и хеши в `skills-lock.json`, обновлять `npx skills update -p`):
+| Пакет | Скиллы | Для чего |
+|---|---|---|
+| `heygen-com/hyperframes` (Apache-2.0) | `hyperframes`, `hyperframes-cli`, `hyperframes-registry`, `media-use`, `figma`, `remotion-to-hyperframes`, `reverse-any-video`, `slideshow`, `style-sampling` | видео из HTML, ~450 готовых блоков, медиа/озвучка/музыка, перенос из Remotion, разбор чужого ролика |
+| `remotion-dev/skills` | `remotion-best-practices` (роутер), `remotion-create`, `-markup`, `-captions`, `-render`, `-studio`, `-docs`, `-maps`, `-multimedia`, `-interactivity`, `-saas`, `-upgrade`, `-license` | официальные скиллы Remotion |
+| `Leonxlnx/taste-skill` (MIT) | `design-taste-frontend` | вкус и анти-шаблонность веб-страниц |
+| `emilkowalski/skills` (MIT) | `animate`, `choreograph`, `review-animations`, `improve-animations`, `remove-animations`, `find-animation-opportunities`, `animation-vocabulary`, `animation-performance`, `apple-design`, `emil-design-eng`, `break-ui`, `prototype`, `pick-ui-library`, `mobile-native`, `animate-expo`, `ask-sonner`, `write-swift` | решения по моушену: кривые, длительности, хореография, ревью анимаций |
+
+Не установлен: `impeccable` (`npx impeccable install` качает с `impeccable.style`, домен закрыт сетевой политикой облачного окружения). Запасной путь: `npx skills add pbakaus/impeccable` (только скилл, без хуков).
 Известно: `doctor` показывает `ffprobe MISSING` (в `OpenMontage/.venv/bin` есть только `ffmpeg` 7.1), нужен `ffprobe`. Запуск: `PATH="OpenMontage/.venv/bin:$PATH"`.
 
 ## 2. OpenMontage `.claude/skills/` (49 шт.) и `.agents/skills/` (91 шт., надмножество)
